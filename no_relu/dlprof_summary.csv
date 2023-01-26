@@ -1,0 +1,44 @@
+System Config
+GPU Count,1
+GPU Name(s),NVIDIA GeForce RTX 2070 SUPER
+CPU Model,Intel(R) Core(TM) i7-9700K CPU @ 3.60GHz
+GPU Driver Version,515.43.04
+Framework,PyTorch 1.10.1+cu102
+CUDA Version,11.7
+NSys Version,2022.1.3.3-1c7b5f7
+DLProf Version,v1.8.0
+DLProf Build,29839685
+
+Summary Report
+Wall Clock Time (ns),2864091540
+Tensor Core Kernel Utilization %,0.0
+GPU Utilization %,0.0
+Tensor Core Kernel Duration %,0.0
+Non-Tensor Core Kernel Duration %,0.0
+Memory Duration %,0.0
+Dataloader Duration %,0.0
+IO Duration %,0.0
+CPU Duration %,78.9
+Other Duration %,21.1
+
+Iterations
+Total Iterations,1
+Aggregated Iterations,1
+Start Iteration,0
+Stop Iteration,0
+Average Iteration Time (ns),2864091540.0
+Iteration Time Standard Deviation,0.0
+
+All Ops
+,GPU Time (ns),CPU Time (ns),# Ops
+All ops,339839,2258878205,32
+Ops using TC,0,0,0
+Ops eligible for TC but not using,308255,3412879,5
+All other ops,31584,2255465326,27
+
+All Kernels
+,GPU Time (ns),CPU Time (ns),# Kernels
+All kernels,352000,450049,28
+Kernels using TC,0,0,0
+Memory,43040,179452,3
+All other kernels,308960,270597,25

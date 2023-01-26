@@ -25,8 +25,8 @@ class dummy_network(nn.Module):
         x = self.pool(F.relu(self.conv1(x)))
         x = self.pool(F.relu(self.conv2(x)))
         x = torch.flatten(x, 1)
-        x = F.relu(self.fc1(x))
-        x = F.relu(self.fc2(x))
+        x = (self.fc1(x))
+        x = (self.fc2(x))
         x = self.fc3(x)
         return x
     
@@ -35,7 +35,6 @@ network = dummy_network().cuda()
 input = torch.randn(1,3,32,32).cuda()
 
 if torch.cuda.is_available():
-    print('true')
     cudnn.benchmark = True
 
 with torch.autograd.profiler.emit_nvtx():
